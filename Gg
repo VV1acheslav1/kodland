@@ -1,0 +1,30 @@
+print('Mystery test')
+answer=input('Готов к игре ? (да/нет)')
+score=0
+total_questions=3
+
+if answer.lower()=='да':
+    answer=input('Question 1: На каком языке ты програмируешь?')
+    if answer.lower()=='python':
+        score += 1
+        print('хорош')
+    else:
+        print('неправильно :(')
+
+
+    answer=input('Question 2: Любишь python? ')
+    if answer.lower()=='да':
+        score += 1
+        print('машина')
+    else:
+        print('неправильно :(')
+
+    answer=input('Question 3: Лучшая школа программирования?')
+    if answer.lower()=='кодланд':
+        score += 1
+        print('хорош')
+    else:
+        print('не угадал :(')
+
+print('Спасибо что играл',score,"очка нормально так!")
+print('гуляй!')
